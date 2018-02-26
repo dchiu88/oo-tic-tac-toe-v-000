@@ -73,8 +73,8 @@ def turn(board)
   end
 end
 
-def position_taken?(board, index)
-  board[index]== "X" || board[index] == "O"
+def position_taken?(user_input)
+  board[user_input]== "X" || board[user_input] == "O"
 end
 
 def current_player(board)
