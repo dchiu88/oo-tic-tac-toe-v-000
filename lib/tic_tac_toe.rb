@@ -54,7 +54,7 @@ def draw?
 end
 
 def over?(board)
-  won?(board) || draw?(board)
+  won? || draw?
 end
 
 def input_to_index(user_input)
