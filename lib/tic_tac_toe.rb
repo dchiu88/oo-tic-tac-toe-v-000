@@ -34,7 +34,7 @@ def display_board
 end
 
 def valid_move?(user_input)
-  user_input.between?(0,8) && !position_taken?(board, index)
+  user_input.between?(0,8) && !position_taken?
 end
 
 def won?(board)
