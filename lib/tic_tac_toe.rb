@@ -86,7 +86,7 @@ def turn_count
 end
 
 def move(index, player = "X")
-  board[index] = player
+  @board[index] = player
 end
 
 def winner
