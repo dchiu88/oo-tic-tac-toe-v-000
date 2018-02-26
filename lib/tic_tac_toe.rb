@@ -86,7 +86,7 @@ def turn_count(board)
 end
 
 def move(user_input, player = "X")
-  board[index] = player
+  board[user_input] = player
 end
 
 def winner(board)
