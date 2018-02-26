@@ -74,7 +74,7 @@ def turn
 end
 
 def position_taken?(index)
-  board[index]== "X" || board[index] == "O"
+  @board[index]== "X" || board[index] == "O"
 end
 
 def current_player
