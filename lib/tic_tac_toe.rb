@@ -85,7 +85,7 @@ def turn_count(board)
   board.count{|token| token == "X" || token == "O"}
 end
 
-def move(index, player = "X")
+def move(user_input, player = "X")
   board[index] = player
 end
 
