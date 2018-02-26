@@ -94,3 +94,5 @@ def winner
     board[winning_combo.first]
   end
 end
+
+end
