@@ -33,8 +33,8 @@ def display_board
   puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
 end
 
-def valid_move?(user_input)
-  user_input.between?(0,8) && !position_taken?
+def valid_move?(board, index)
+  index.between?(0,8) && !position_taken?(board, index)
 end
 
 def won?(board)
@@ -73,8 +73,8 @@ def turn(board)
   end
 end
 
-def position_taken?(user_input)
-  board[user_input]== "X" || board[user_input] == "O"
+def position_taken?(index)
+  board[index]== "X" || board[index] == "O"
 end
 
 def current_player(board)
@@ -85,8 +85,8 @@ def turn_count(board)
   board.count{|token| token == "X" || token == "O"}
 end
 
-def move(user_input, player = "X")
-  board[user_input] = player
+def move(index, player = "X")
+  board[index] = player
 end
 
 def winner(board)
