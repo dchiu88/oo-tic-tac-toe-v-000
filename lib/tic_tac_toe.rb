@@ -89,7 +89,7 @@ def move(index, player = "X")
   board[index] = player
 end
 
-def winner(board)
+def winner
   if winning_combo = won?(board)
     board[winning_combo.first]
   end
